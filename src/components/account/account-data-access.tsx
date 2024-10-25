@@ -15,6 +15,7 @@ import {useMutation, useQuery, useQueryClient} from '@tanstack/react-query'
 import toast from 'react-hot-toast'
 import {useTransactionToast} from '../ui/ui-layout'
 
+// * Function to get the balance of an account
 export function useGetBalance({ address }: { address: PublicKey }) {
   const { connection } = useConnection()
 
@@ -24,6 +25,7 @@ export function useGetBalance({ address }: { address: PublicKey }) {
   })
 }
 
+// * Function to get the signatures of an account. Signatures are used to confirm transactions.
 export function useGetSignatures({ address }: { address: PublicKey }) {
   const { connection } = useConnection()
 

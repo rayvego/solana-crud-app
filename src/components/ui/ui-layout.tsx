@@ -11,14 +11,14 @@ import {ClusterChecker, ClusterUiSelect, ExplorerLink} from '../cluster/cluster-
 import {WalletButton} from '../solana/solana-provider'
 
 export function UiLayout({ children, links }: { children: ReactNode; links: { label: string; path: string }[] }) {
-  const pathname = usePathname()
+  const pathname = usePathname() // Get the current path
 
   return (
     <div className="h-full flex flex-col">
       <div className="navbar bg-base-300 text-neutral-content flex-col md:flex-row space-y-2 md:space-y-0">
         <div className="flex-1">
           <Link className="btn btn-ghost normal-case text-xl" href="/">
-            <img className="h-4 md:h-6" alt="Logo" src="/logo.png" />
+            <span className={"text-white"}>Journal CRUD App</span>
           </Link>
           <ul className="menu menu-horizontal px-1 space-x-2">
             {links.map(({ label, path }) => (
@@ -62,6 +62,15 @@ export function UiLayout({ children, links }: { children: ReactNode; links: { la
             >
               create-solana-dapp
             </a>
+            {' | '} Created by{' '}
+            <a
+              className="link hover:text-white"
+              href="https://github.com/rayvego"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rayvego
+            </a>
           </p>
         </aside>
       </footer>
@@ -70,14 +79,14 @@ export function UiLayout({ children, links }: { children: ReactNode; links: { la
 }
 
 export function AppModal({
-  children,
-  title,
-  hide,
-  show,
-  submit,
-  submitDisabled,
-  submitLabel,
-}: {
+                           children,
+                           title,
+                           hide,
+                           show,
+                           submit,
+                           submitDisabled,
+                           submitLabel,
+                         }: {
   children: ReactNode
   title: string
   hide: () => void

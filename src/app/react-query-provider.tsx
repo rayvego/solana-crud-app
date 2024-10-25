@@ -13,3 +13,5 @@ export function ReactQueryProvider({ children }: { children: ReactNode }) {
     </QueryClientProvider>
   )
 }
+
+// * This file is a React Query provider that wraps the entire application.

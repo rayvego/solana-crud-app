@@ -16,6 +16,7 @@ import {
   useTransferSol,
 } from './account-data-access'
 
+// * Function to get the balance of an account - uses a custom hook - useGetBalance
 export function AccountBalance({ address }: { address: PublicKey }) {
   const query = useGetBalance({ address })
 
@@ -27,6 +28,7 @@ export function AccountBalance({ address }: { address: PublicKey }) {
     </div>
   )
 }
+
 export function AccountChecker() {
   const { publicKey } = useWallet()
   if (!publicKey) {
@@ -60,6 +62,7 @@ export function AccountBalanceCheck({ address }: { address: PublicKey }) {
   return null
 }
 
+// * Function to airdrop, send and receive tokens - uses custom hooks - useRequestAirdrop, useTransferSol
 export function AccountButtons({ address }: { address: PublicKey }) {
   const wallet = useWallet()
   const { cluster } = useCluster()

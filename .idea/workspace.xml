@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e4b58e-5572-4421-bf0d-e7b435b93cea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/anchor/Anchor.toml" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/Anchor.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anchor/programs/basic/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/programs/basic/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anchor/programs/basic/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/programs/basic/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anchor/target/idl/basic.json" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/target/idl/basic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anchor/target/types/basic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/target/types/basic.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anchor/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/anchor/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="76e4b58e-5572-4421-bf0d-e7b435b93cea" name="Changes" comment="implement crud operations">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/react-query-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/react-query-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/account-data-access.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/account-data-access.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/account-detail-feature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/account-detail-feature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/account-ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/account-ui.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/basic/basic-data-access.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basic/basic-data-access.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/basic/basic-feature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basic/basic-feature.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basic/basic-ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basic/basic-ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cluster/cluster-ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cluster/cluster-ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/dashboard-feature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard-feature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/solana/solana-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/solana/solana-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ui-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ui-layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rayvego&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rayvego/solana-crud-app.git&quot;,
+    &quot;accountId&quot;: &quot;0be7cfde-6f76-4e04-9420-fb06f49df610&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -42,6 +56,7 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/mohitpanchal/Coding/web3/Code Along Projects/solana/crud/node_modules/typescript/lib&quot;
   }
 }</component>
@@ -55,5 +70,31 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implement crud operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement crud operations" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/account/account-data-access.tsx</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
